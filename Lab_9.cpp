@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// Struct for holding infomation about a computer
 struct computerType
     {
         string manufacturer;
@@ -12,10 +13,12 @@ struct computerType
         int hddGB;
         int year;
         double price;
-    } computerType;
+    } computerType; // Variable declared right after the struct
 
 int main()
 {
+    // User prompt to ask for information about computer
+    // and store that into each variable within the struct
     cout << "-------------------------------------\n";
     cout << "Enter your computers INFO as PROMPTED\n";
     cout << "-------------------------------------\n";
@@ -48,6 +51,7 @@ int main()
     cin >> computerType.price;
     cout << endl;
 
+    // Output that infomation to the user
     cout << "Thank you, this information will be shared "
          << "with retailers to better provide you with ads."
          << "\n\n";
